@@ -29,7 +29,7 @@ namespace ContactAPI
             {
                 options.AddPolicy("AllowAngularDevClient", builder =>
                 {
-                    builder.WithOrigins("https://localhost:4200")
+                    builder.WithOrigins("https://localhost:4200", "https://swati-portfolios.onrender.com")
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                 });
